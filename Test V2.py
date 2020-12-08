@@ -1,6 +1,7 @@
 
 name = input('What is yor name ?')
 
-print(name)
+age = 20
 
-while  False:
+print(name + " " + str(age))
+
