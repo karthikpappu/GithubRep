@@ -1,7 +1,14 @@
+import alpaca_trade_api as tradeapi
 
-name = input('What is yor name ?')
+# authentication and connection details
+api_key = 'PKPHLT0V9WFI4Y7AY442'
+api_secret = '1sEnfWFWrYD1cy7PM5X54JQP85zIkkIAJDPIdVWp'
+base_url = 'https://paper-api.alpaca.markets'
 
-age = 20
+# instantiate REST API
+api = tradeapi.REST(api_key, api_secret, base_url, api_version='v2')
 
-print(name + " " + str(age))
-
+# obtain account information
+account = api.get_account()
+assert isinstance(account, object)
+print(account)
