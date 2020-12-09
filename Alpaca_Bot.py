@@ -40,7 +40,7 @@ class Martingale(object):
 
    if __name__ == '__main__':
        t = Martingale()
-       t.submit_order(3)
+       t.submit_order(2)
 
 
 
