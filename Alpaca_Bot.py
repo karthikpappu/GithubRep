@@ -41,6 +41,6 @@ class Martingale(object):
                 self.current_order = self.api.submit_order(self.symbol, sell_quantity, 'sell', 'limit', 'day',
                                                            self.last_price)
 
-        if __name__ != '__main__':
+        if __name__ == '__main__':
             t = Martingale()
             t.submit_order(3)
